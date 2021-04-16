@@ -27,16 +27,16 @@ public class Lutador {
 
     private Double vida = 100.0;
 
-    private Integer concentracoesRealizadas = 0;
+    private Integer concentracaoRealizada = 0;
 
     private Boolean isVivo = true;
 
     public ResponseEntity concentra(){
-        if (concentracoesRealizadas > 3){
+        if (concentracaoRealizada > 3){
             return ResponseEntity.status(400).body("Lutador concentrou-se 3 vezes!");
         }else {
             this.vida = this.vida * 1.5;
-            concentracoesRealizadas++;
+            concentracaoRealizada++;
             return ResponseEntity.ok().build();
         }
     }

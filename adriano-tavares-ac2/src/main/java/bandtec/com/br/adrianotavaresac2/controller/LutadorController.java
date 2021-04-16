@@ -47,8 +47,8 @@ public class LutadorController {
             return ResponseEntity.ok().build();
            }
 
-    //E
-    @PostMapping("/golpe/{JSON}" ) //D) POST/lutadores/golpe {JSON}
+
+    @PostMapping("/golpe/{JSON}" ) //E) POST/lutadores/golpe {JSON}
     public ResponseEntity cadastraUsuario(@RequestBody HttpServletResponse response){
         Integer id;
 
